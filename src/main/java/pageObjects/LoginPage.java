@@ -8,7 +8,8 @@ public class LoginPage {
 	
 	public static WebDriver driver;
 	
-	By Usernamefield=By.name("username");
+	By Usernamefield=By.cssSelector("input[name='username']");
+
 	By Usernamefieldie=By.xpath("//input[@class='form-control' and @name='username' and @type='text']");
 	By Passwordfield=By.name("password");
 	By Passwordfieldie=By.xpath("//input[@class='form-control' and @name='password' and @type='password']");
