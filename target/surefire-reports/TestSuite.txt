@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 31, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 1,170.677 s <<< FAILURE! - in TestSuite
+ValidateAudioCablesCategory(smokeTestIE.ValidateSmokeTest)  Time elapsed: 11.291 s  <<< FAILURE!
+java.lang.AssertionError: expected [Audio Cables - MarkITplace] but found [All Products - MarkITplace]
+	at smokeTestIE.ValidateSmokeTest.ValidateAudioCablesCategory(ValidateSmokeTest.java:552)
+
+ValidateCalendarLinks(smokeTestIE.ValidateSmokeTest)  Time elapsed: 60.991 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to find element with xpath == //a[@class='tab-link']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-GAH683G', ip: '10.0.2.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:26126/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true}
+Session ID: d186ba43-d38a-4fcf-883b-bdbf37cd6e15
+*** Element info: {Using=xpath, value=//a[@class='tab-link']}
+	at smokeTestIE.ValidateSmokeTest.ValidateCalendarLinks(ValidateSmokeTest.java:1003)
+
+ValidateAllReportsLinks(smokeTestIE.ValidateSmokeTest)  Time elapsed: 17.819 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+Cannot click on element
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-GAH683G', ip: '10.0.2.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:26126/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true}
+Session ID: d186ba43-d38a-4fcf-883b-bdbf37cd6e15
+	at smokeTestIE.ValidateSmokeTest.ValidateAllReportsLinks(ValidateSmokeTest.java:1031)
+

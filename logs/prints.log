@@ -1,0 +1,158 @@
+20:08:07.283 [main] INFO  resources.base - User Have Successfully Login To The Home Page
+20:08:18.470 [main] INFO  resources.base - User Have Successfully reached the favorites Page
+20:08:39.751 [main] ERROR resources.base - Favorite page not Open
+20:08:39.751 [main] ERROR resources.base - Unable to find element with xpath == (//a[@class='btn'])[2]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-GAH683G', ip: '10.0.2.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0.0, ie.ensureCleanSession=false, elementScrollBehavior=0.0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:12975/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000.0, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=windows, setWindowRect=true, platform=ANY}]
+Session ID: ad9416bf-ba91-46b1-be3e-ff67c7131e29
+*** Element info: {Using=xpath, value=(//a[@class='btn'])[2]}
+20:09:01.436 [main] INFO  resources.base - user is searching printer using the search textbox
+20:09:01.456 [main] INFO  resources.base - User Have Successfully reached the printer search listing page
+20:09:01.611 [main] INFO  resources.base - Search result data is Appearing on the Search Result Page
+20:09:29.377 [main] INFO  resources.base - User has clicked on Add to Cart on First Searched Product
+20:09:34.657 [main] INFO  resources.base - Product 1 is successfully added to Cart
+20:09:35.825 [main] INFO  resources.base - User has closed the Add to Cart Modal after adding 1st product to cart
+20:09:42.017 [main] INFO  resources.base - User has clicked on Add to Favorites on First Searched Product
+20:09:45.064 [main] INFO  resources.base - Product is successfully added to favorites
+20:09:46.423 [main] INFO  resources.base - User has Close Add to Favorites Dialog box
+20:10:07.693 [main] INFO  resources.base - User Have Successfully reached the PDP Page
+20:10:36.032 [main] INFO  resources.base - Recently Viewed Page is Opened
+20:10:40.228 [main] INFO  resources.base - User has clicked the Logo from the footer of the page
+20:10:40.241 [main] INFO  resources.base - User Have reached the Home Page clicking on the footer Logo
+20:10:48.157 [main] INFO  resources.base - User has clicked on the My Profile page from My Account dropdown
+20:10:48.174 [main] INFO  resources.base - User has clicked on the My Profile page from My Account dropdown
+20:11:03.205 [main] INFO  resources.base - User has clicked on the My Profile page from My Account dropdown
+20:11:07.403 [main] INFO  resources.base - User has clicked the Logo from the header of the page
+20:11:07.438 [main] INFO  resources.base - User Have reached the Home Page clicking on the Header Logo
+20:11:08.767 [main] INFO  resources.base - User has clicked on the Standard Catalog Navigation button from header
+20:11:13.798 [main] INFO  resources.base - User Have reached the Standard Catalog Page
+20:11:36.032 [main] INFO  resources.base - User has clicked on the 1st Standard Product appearing and reached the PDP Page
+20:12:05.736 [main] INFO  resources.base - User has clicked on the All Product Nevigation button from the header
+20:12:10.755 [main] INFO  resources.base - User Have reached the All Product Page
+20:12:22.111 [main] INFO  resources.base - User has clicked on Audio Cables Category From All Products Page
+20:12:22.111 [main] ERROR resources.base - User have not reached the Audio Cable Category Page after clicking Audio Cable category from all product page
+20:12:22.111 [main] ERROR resources.base - expected [Audio Cables - MarkITplace] but found [All Products - MarkITplace]
+20:12:29.861 [main] INFO  resources.base - User has clicked on Resouces link from the header
+20:12:39.894 [main] INFO  resources.base - User Have reached the Resources Page
+20:12:47.454 [main] INFO  resources.base - User has clicked on Special Offer Link from the header
+20:12:47.473 [main] INFO  resources.base - User Have reached the Special Offer Page
+20:12:54.329 [main] INFO  resources.base - User has clicked on Cart Icon from the header
+20:12:54.360 [main] INFO  resources.base - User Have reached the Shopping Cart Page
+20:12:58.407 [main] INFO  resources.base - User has clicked on remove link for the 1st product
+20:13:03.548 [main] INFO  resources.base - User Have successfull removed the first product
+20:13:31.970 [main] INFO  resources.base - User has clicked the Logo from the header of the page
+20:13:31.990 [main] INFO  resources.base - User Have reached the Home Page clicking on the Header Logo
+20:13:33.142 [main] INFO  resources.base - User has clicked the Logo from the footer of the page
+20:13:33.158 [main] INFO  resources.base - User Have reached the Home Page clicking on the footer Logo
+20:13:34.321 [main] INFO  resources.base - User has clicked on the Standard Catalog Link from the footer of the page
+20:13:44.345 [main] INFO  resources.base - User Have reached the Standard Product page after clicking on the Standard Catalog Link from the footer of the page
+20:13:54.081 [main] INFO  resources.base - User has clicked on the All product Link from the footer of the page
+20:13:54.095 [main] INFO  resources.base - User Have reached the All Product page after clicking on the Standard Catalog Link from the footer of the page
+20:14:05.485 [main] INFO  resources.base - User has clicked on the resources  Link from the footer of the page
+20:14:05.501 [main] INFO  resources.base - User Have reached the resources page after clicking on the resources Link from the footer of the page
+20:14:11.751 [main] INFO  resources.base - User has clicked on the Special offer Link from the footer of the page
+20:14:11.767 [main] INFO  resources.base - User Have reached the Special offer after clicking on the Special offer Link from the footer of the page
+20:14:21.501 [main] INFO  resources.base - User has clicked on the Special offer Link from the footer of the page
+20:14:21.517 [main] INFO  resources.base - User Have reached the Favorites after clicking on the Favorites Link from the footer of the page
+20:14:47.735 [main] INFO  resources.base - User has clicked on the Track button from the header of the page
+20:14:47.752 [main] INFO  resources.base - User have reached the Track page after clicking on the Track button from the header of the page
+20:15:00.174 [main] INFO  resources.base - User has clicked on the order button from the header of the page
+20:15:00.187 [main] INFO  resources.base - User have reached the Order page after clicking on the Order button from the header of the page
+20:15:29.110 [main] INFO  resources.base - User has clicked on the Purchase Analysis button from the header of the page
+20:15:29.158 [main] INFO  resources.base - User have reached the Purchase Analysis page after clicking on the Purchase Analysis button from the header of the page
+20:15:30.586 [main] INFO  resources.base - User have clicked on email icon on purchase analysis Page
+20:15:31.268 [main] INFO  resources.base - User have entered the email on email field at purchase analysis Page
+20:15:32.783 [main] INFO  resources.base - User have click on Send button at email popup screen at purchase analysis Page
+20:15:49.782 [main] INFO  resources.base - User has clicked on the Calendar button from the header of the page
+20:15:59.798 [main] INFO  resources.base - User have reached the  Calendar page after clicking on the Calendar button from the header of the page
+20:17:13.142 [main] INFO  resources.base - User has clicked on the Assets report from Report tab
+20:17:13.158 [main] INFO  resources.base - User have reached the assets report after clicking on asset link from report tab
+20:17:25.696 [main] INFO  resources.base - User has clicked on the Days To Ship report from Report tab
+20:17:35.723 [main] ERROR resources.base - User not able to reach the Days To Ship report after clicking on Days To Ship link from report tab
+20:17:35.723 [main] ERROR resources.base - expected [Days To Ship Report - MarkITplace] but found [Assets Report - MarkITplace]
+20:17:48.897 [main] INFO  resources.base - User has clicked on the Expiration report from Report tab
+20:17:58.923 [main] ERROR resources.base - User not able to reach the Expiration report after clicking on Expiration link from report tab
+20:17:58.923 [main] ERROR resources.base - expected [Expiration Report - MarkITplace] but found [Days To Ship Report - MarkITplace]
+20:18:31.001 [main] INFO  resources.base - User has clicked on the Inventory report from Report tab
+20:18:41.020 [main] INFO  resources.base - User have reached the Inventory report after clicking on Inventory link from report tab
+20:18:54.329 [main] INFO  resources.base - User has clicked on the Saved Report icon from the header of the page
+20:19:04.345 [main] ERROR resources.base - User have not reached the Saved Report page after clicking on the Saved Report icon from the header of the page
+20:19:04.345 [main] ERROR resources.base - expected [Saved Reports - MarkITplace] but found [This site isn’t secure]
+20:19:14.440 [main] INFO  resources.base - Compare Page not reached
+06:52:03.793 [main] INFO  resources.base - User Have Successfully Login To The Home Page
+06:52:51.903 [main] INFO  resources.base - User Have Successfully reached the favorites Page
+06:53:43.059 [main] ERROR resources.base - Favorite page not Open
+06:53:43.059 [main] ERROR resources.base - Unable to find element with xpath == (//a[@class='btn'])[2]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-GAH683G', ip: '10.0.2.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0.0, ie.ensureCleanSession=false, elementScrollBehavior=0.0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:16959/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000.0, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=windows, setWindowRect=true, platform=ANY}]
+Session ID: 914b9d25-d73a-4083-803b-935d3ffa2941
+*** Element info: {Using=xpath, value=(//a[@class='btn'])[2]}
+06:55:04.763 [main] INFO  resources.base - user is searching printer using the search textbox
+06:55:04.795 [main] INFO  resources.base - User Have Successfully reached the printer search listing page
+06:55:04.969 [main] INFO  resources.base - Search result data is Appearing on the Search Result Page
+06:56:00.122 [main] INFO  resources.base - User has clicked on Add to Cart on First Searched Product
+06:56:04.746 [main] INFO  resources.base - Product 1 is successfully added to Cart
+06:56:35.981 [main] INFO  resources.base - User has closed the Add to Cart Modal after adding 1st product to cart
+06:57:12.356 [main] INFO  resources.base - User has clicked on Add to Favorites on First Searched Product
+06:57:22.403 [main] ERROR resources.base - Product is not added to favorites
+06:57:22.403 [main] ERROR resources.base - Unable to find element with xpath == //*[@id='products-content']/div/div[2]/div/div/div[1]/h4
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-GAH683G', ip: '10.0.2.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0.0, ie.ensureCleanSession=false, elementScrollBehavior=0.0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:16959/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000.0, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=windows, setWindowRect=true, platform=ANY}]
+Session ID: 914b9d25-d73a-4083-803b-935d3ffa2941
+*** Element info: {Using=xpath, value=//*[@id='products-content']/div/div[2]/div/div/div[1]/h4}
+06:58:25.606 [main] INFO  resources.base - User Have Successfully reached the PDP Page
+06:59:22.217 [main] INFO  resources.base - Recently Viewed Page is Opened
+06:59:55.919 [main] INFO  resources.base - User has clicked the Logo from the footer of the page
+06:59:55.950 [main] INFO  resources.base - User Have reached the Home Page clicking on the footer Logo
+07:01:04.289 [main] INFO  resources.base - User has clicked on the My Profile page from My Account dropdown
+07:01:04.308 [main] INFO  resources.base - User has clicked on the My Profile page from My Account dropdown
+07:01:50.778 [main] INFO  resources.base - User has clicked on the My Profile page from My Account dropdown
+07:02:21.880 [main] INFO  resources.base - User has clicked the Logo from the header of the page
+07:02:21.903 [main] ERROR resources.base - User not able to reach home clicking on the header logo
+07:02:21.903 [main] ERROR resources.base - expected [Shop - MarkITplace] but found [Shipping Address - MarkITplace]
+07:03:42.121 [main] INFO  resources.base - User has clicked on the All Product Nevigation button from the header
+07:03:47.141 [main] ERROR resources.base - User have not reached the All Products Page after clicking on the All Product Nevigation button from the header
+07:03:47.141 [main] ERROR resources.base - expected [All Products - MarkITplace] but found [Shop - MarkITplace]
+07:04:37.466 [main] INFO  resources.base - User has clicked on Resouces link from the header
+07:04:47.497 [main] INFO  resources.base - User Have reached the Resources Page
+07:05:25.543 [main] INFO  resources.base - User has clicked on Special Offer Link from the header
+07:05:25.575 [main] INFO  resources.base - User Have reached the Special Offer Page
+07:06:03.185 [main] INFO  resources.base - User has clicked on Cart Icon from the header
+07:06:03.217 [main] INFO  resources.base - User Have reached the Shopping Cart Page
+07:06:37.389 [main] INFO  resources.base - User has clicked on remove link for the 1st product
+07:06:42.543 [main] INFO  resources.base - User Have successfull removed the first product
+07:07:26.325 [main] INFO  resources.base - User has clicked the Logo from the header of the page
+07:07:26.342 [main] INFO  resources.base - User Have reached the Home Page clicking on the Header Logo
+07:08:00.247 [main] INFO  resources.base - User has clicked the Logo from the footer of the page
+07:08:00.278 [main] INFO  resources.base - User Have reached the Home Page clicking on the footer Logo
+07:08:38.982 [main] INFO  resources.base - User has clicked on the Standard Catalog Link from the footer of the page
+07:08:49.013 [main] INFO  resources.base - User Have reached the Standard Product page after clicking on the Standard Catalog Link from the footer of the page
+07:09:32.357 [main] INFO  resources.base - User has clicked on the All product Link from the footer of the page
+07:09:32.372 [main] INFO  resources.base - User Have reached the All Product page after clicking on the Standard Catalog Link from the footer of the page
+07:10:13.810 [main] INFO  resources.base - User has clicked on the resources  Link from the footer of the page
+07:10:13.843 [main] INFO  resources.base - User Have reached the resources page after clicking on the resources Link from the footer of the page
+07:10:55.935 [main] INFO  resources.base - User has clicked on the Special offer Link from the footer of the page
+07:10:55.965 [main] INFO  resources.base - User Have reached the Special offer after clicking on the Special offer Link from the footer of the page
+07:11:35.247 [main] INFO  resources.base - User has clicked on the Special offer Link from the footer of the page
+07:11:35.263 [main] INFO  resources.base - User Have reached the Favorites after clicking on the Favorites Link from the footer of the page
+07:12:41.935 [main] INFO  resources.base - User has clicked on the Track button from the header of the page
+07:12:41.950 [main] INFO  resources.base - User have reached the Track page after clicking on the Track button from the header of the page
+07:13:27.841 [main] INFO  resources.base - User has clicked on the order button from the header of the page
+07:13:27.857 [main] INFO  resources.base - User have reached the Order page after clicking on the Order button from the header of the page
+07:14:25.532 [main] INFO  resources.base - User has clicked on the Purchase Analysis button from the header of the page
+07:14:25.547 [main] INFO  resources.base - User have reached the Purchase Analysis page after clicking on the Purchase Analysis button from the header of the page
+07:14:57.013 [main] INFO  resources.base - User have clicked on email icon on purchase analysis Page
+07:15:27.642 [main] INFO  resources.base - User have entered the email on email field at purchase analysis Page
+07:15:59.169 [main] INFO  resources.base - User have click on Send button at email popup screen at purchase analysis Page
+07:17:42.794 [main] INFO  resources.base - User has clicked on the Calendar button from the header of the page
+07:17:52.810 [main] INFO  resources.base - User have reached the  Calendar page after clicking on the Calendar button from the header of the page
+10:37:59.914 [main] ERROR resources.base - User has got the issue in removing product from cart
