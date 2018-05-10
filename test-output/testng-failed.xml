@@ -5,36 +5,13 @@
     <classes>
       <class name="smokeTestIE.ValidateSmokeTest">
         <methods>
-          <include name="ValidatePDP"/>
-          <include name="ValidateSpecialOffer"/>
-          <include name="ValidateFavoriteIcon"/>
-          <include name="ValidateAudioCablesCategory"/>
-          <include name="ValidateFooterLinks"/>
-          <include name="ValidateSearching"/>
-          <include name="ValidateordersPage"/>
-          <include name="ValidateAddTofavorites"/>
-          <include name="ValidateFooterLogo"/>
-          <include name="ValidateCartPage"/>
-          <include name="ValidateStandardsCatalog"/>
-          <include name="ValidateLogin"/>
-          <include name="ValidateCheckoutFooterLogo"/>
-          <include name="ValidateAllProduct"/>
-          <include name="ValidateAllReportsLinks"/>
           <include name="ValidateStandardsCatalogDetail"/>
           <include name="ValidatePurchaseAnalysisPage"/>
-          <include name="ValidateAddToCart"/>
           <include name="ValidatePAEmail"/>
-          <include name="ValidateResources"/>
-          <include name="ValidateHeaderLogo"/>
-          <include name="ValidateRecentViewLink"/>
-          <include name="ValidateMyProfNavigation"/>
-          <include name="ValidateSavedReports"/>
-          <include name="ValidateCheckoutProcess"/>
-          <include name="ValidateComparePage"/>
+          <include name="closebrowser"/>
+          <include name="ValidateAudioCablesCategory"/>
           <include name="ValidateCalendarPage"/>
-          <include name="ValidateCalendarLinks"/>
-          <include name="ValidateTrackpage"/>
-          <include name="ValidateCheckoutHeaderLogo"/>
+          <include name="ValidateFooterLinks"/>
         </methods>
       </class> <!-- smokeTestIE.ValidateSmokeTest -->
     </classes>

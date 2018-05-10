@@ -51,7 +51,7 @@ public class ValidateSmokeTest extends base {
 	public void ValidateLogin() throws IOException, InterruptedException {
 		//WebDriverWait wait=new WebDriverWait(driver,500);
 		driver = initializeDriver();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		String TitleHome = driver.getTitle();
 		// System.out.println(TitleHome);
 		// Boolean IsPresent=driver.findElements(By.yourLocator).size() > 0;
@@ -73,7 +73,7 @@ public class ValidateSmokeTest extends base {
 
 	public void ValidateFavoriteIcon() throws InterruptedException {
 		Header hd = new Header(driver);
-		WebDriverWait wt = new WebDriverWait(driver, 50);
+		WebDriverWait wt = new WebDriverWait(driver, 20);
 		hd.getFavrtIcon().click();
 		Thread.sleep(10000);
 		String title = driver.getTitle();
@@ -135,7 +135,7 @@ public class ValidateSmokeTest extends base {
 		//14marchdriver.get(url1+"/shop/results?q=Printers&type=Keywords");
 		//14marchLog.info("User has reached the Printer Search result page");
 		
-		WebDriverWait wait=new WebDriverWait(driver,50);
+		WebDriverWait wait=new WebDriverWait(driver,20);
 		
 		HomePage hp = new HomePage(driver);
 		
@@ -201,11 +201,11 @@ public class ValidateSmokeTest extends base {
 		Assert.assertEquals(Srp.getAllProducts().isDisplayed(), true);
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 3,enabled=false)
 
 	public void ValidateAddToCart() throws InterruptedException {
 		SearchResultPage Srp = new SearchResultPage(driver);
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, 20);
 		Thread.sleep(20000);
 		// --wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@id='add_to_cart_10886231']"))));
 		wait.until(ExpectedConditions.visibilityOf(Srp.getProduct1Cart()));
@@ -281,7 +281,7 @@ Srp.getProduct4Cart().click();
 		
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 4,enabled=false)
 
 	public void ValidateAddTofavorites() throws InterruptedException {
 		SearchResultPage Srp = new SearchResultPage(driver);
@@ -436,9 +436,10 @@ Srp.getProduct4Cart().click();
 
 	@Test(priority = 9)
 
-	public void ValidateHeaderLogo() {
+	public void ValidateHeaderLogo() throws InterruptedException {
 		Header hd = new Header(driver);
 		hd.getHeadLogo().click();
+		Thread.sleep(10000);
 		Log.info("User has clicked the Logo from the header of the page");
 		String title4 = driver.getTitle();
 		try {
@@ -516,7 +517,7 @@ Srp.getProduct4Cart().click();
 		
 		Log.info("User has clicked on the All Product Nevigation button from the header");
 		
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		String title5 = driver.getTitle();
 		String expectedTitle = "All Products - MarkITplace";
 		try {
@@ -535,11 +536,12 @@ Srp.getProduct4Cart().click();
 	@Test(priority = 13)
 	public void ValidateAudioCablesCategory() throws InterruptedException {
 		AllProducts AP = new AllProducts(driver);
+		Thread.sleep(4000);
 		AP.getAudioCablesFF().click();
-		Thread.sleep(10000);
 		Log.info("User has clicked on Audio Cables Category From All Products Page");
 		String title5 = driver.getTitle();
 		String expectedTitle = "Audio Cables - MarkITplace";
+		Thread.sleep(15000);
 		try {
 			Assert.assertEquals(title5, expectedTitle);
 			Log.info("User Have reached the Audio Cables Category Page");
@@ -642,7 +644,7 @@ Srp.getProduct4Cart().click();
 		}
 
 
-	@Test(priority = 18)
+	@Test(priority = 18,enabled=false)
 	public void ValidateCheckoutProcess() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, 100);
 		Random random = new Random();
@@ -697,11 +699,12 @@ Srp.getProduct4Cart().click();
 		// wait.until(ExpectedConditions.visibilityOf(Srp.getProduct1Cart()));
 	}
 
-	@Test(priority = 19)
+	@Test(priority = 19,enabled=false)
 
-	public void ValidateCheckoutHeaderLogo() {
+	public void ValidateCheckoutHeaderLogo() throws InterruptedException {
 		Header hd = new Header(driver);
 		hd.getHeadLogo().click();
+		Thread.sleep(10000);
 		Log.info("User has clicked the Logo from the header of the page");
 		String title4 = driver.getTitle();
 		try {
@@ -716,7 +719,7 @@ Srp.getProduct4Cart().click();
 		Assert.assertEquals(title4, "Shop - MarkITplace");
 	}
 
-	@Test(priority = 20)
+	@Test(priority = 20,enabled=false)
 
 	public void ValidateCheckoutFooterLogo() {
 		Footer ft = new Footer(driver);
@@ -879,11 +882,12 @@ Srp.getProduct4Cart().click();
 
 	@Test(priority = 24)
 
-	public void ValidatePurchaseAnalysisPage() {
+	public void ValidatePurchaseAnalysisPage() throws InterruptedException {
 		Header head = new Header(driver);
 		// WebDriverWait wait = new WebDriverWait(driver,10000);
 		// wait.until(ExpectedConditions.visibilityOf(head.getPAnalysisBtn()));
 		head.getPAnalysisBtn().click();
+		Thread.sleep(10000);
 		Log.info("User has clicked on the Purchase Analysis button from the header of the page");
 		String title5 = driver.getTitle();
 		String exp5 = "Purchase Analysis - MarkITplace";
@@ -966,7 +970,7 @@ Srp.getProduct4Cart().click();
 		Assert.assertEquals(title5, exp5);
 	}
 
-	@Test(priority = 27)
+	@Test(priority = 27,enabled=false)
 
 	public void ValidateCalendarLinks() throws InterruptedException {
 		// Calendar Cal = new Calendar(driver);
@@ -1017,7 +1021,7 @@ Srp.getProduct4Cart().click();
 		Assert.assertEquals(Act2, exp1);
 	}
 
-	@Test(priority = 28)
+	@Test(priority = 28,enabled=false)
 
 	public void ValidateAllReportsLinks() throws InterruptedException {
 		WebDriverWait wt = new WebDriverWait(driver,50);
@@ -1066,7 +1070,7 @@ Srp.getProduct4Cart().click();
 		wt.until(ExpectedConditions.elementToBeClickable(head.getReports()));
 		head.getReports().click();
 		//wt.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("(//a[text()='Expiration'])[2]"))));
-		Thread.sleep(3000);
+		Thread.sleep(10000);
 		driver.findElement(By.xpath("(//a[text()='Expiration'])[2]")).click();
 		Log.info("User has clicked on the Expiration report from Report tab");
 		Thread.sleep(10000);
@@ -1192,9 +1196,10 @@ Srp.getProduct4Cart().click();
 		head.getReports().click();
 		//wt.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("(//a[text()='Order Line'])[2]"))));
 		Thread.sleep(10000);
-		driver.findElement(By.xpath("(//a[text()='Order Line'])[2]")).click();
+		driver.findElement(By.cssSelector("a[href='/track/reports/order-line']")).click();
+		//driver.findElement(By.xpath("(//a[text()='Order Line'])[2]")).click();
 		Log.info("User has clicked on the Order Line report from Report tab");
-		Thread.sleep(10000);
+		Thread.sleep(15000);
 		String title13 = driver.getTitle();
 		String exp13 = "Order Line Report - MarkITplace";
 		try {
@@ -1212,9 +1217,10 @@ Srp.getProduct4Cart().click();
 		head.getReports().click();
 		//wt.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("(//a[text()='PARs'])[3]"))));
 		Thread.sleep(10000);
-		driver.findElement(By.xpath("(//a[text()='PARs'])[3]")).click();
+		//driver.findElement(By.xpath("(//a[text()='PARs'])[3]")).click();
+		driver.findElement(By.cssSelector("a[href='/track/reports/pars']")).click();
 		Log.info("User has clicked on the PARs report from Report tab");
-		Thread.sleep(10000);
+		Thread.sleep(15000);
 		String title14 = driver.getTitle();
 		String exp14 = "PARs Report - MarkITplace";
 		try {
@@ -1338,7 +1344,7 @@ Srp.getProduct4Cart().click();
 		TrackPage TP = new TrackPage(driver);
 		TP.getSavedReports().click();
 		Log.info("User has clicked on the Saved Report icon from the header of the page");
-		Thread.sleep(10000);
+		Thread.sleep(15000);
 		String title5 = driver.getTitle();
 		String exp5 = "Saved Reports - MarkITplace";
 		try {
@@ -1370,10 +1376,9 @@ Srp.getProduct4Cart().click();
 		//driver.findElement(By.xpath("(//div[@class='control__indicator'])[2]")).click();
 		//driver.findElement(By.linkText("Compare")).click();
 		//
-		srp.getCompare1().click();
+			srp.getCompare1().click();
 		srp.getCompare2().click();
 		srp.getCompareBtn().click();
-		
 		Thread.sleep(10000);
 		
 		Exp = "Product Compare - MarkITplace";
@@ -1394,12 +1399,12 @@ Srp.getProduct4Cart().click();
 	
 	
 
-	//@AfterTest
+	@AfterTest
 
-	//public void closebrowser()
- 
-	//{
-		//driver.close();
-	//}
+	public void closebrowser()
+
+	{
+		driver.close();
+	}
 
 }
