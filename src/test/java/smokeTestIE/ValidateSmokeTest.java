@@ -501,13 +501,15 @@ Srp.getProduct4Cart().click();
 			Log.error(e.getMessage());
 		}
 
-		wt.until(ExpectedConditions.elementToBeClickable(St.getCartBtnNew()));
+		/*15-may-2018-
+		 * wt.until(ExpectedConditions.elementToBeClickable(St.getCartBtnNew()));
 		St.getCartBtnNew().click();
 		Thread.sleep(10000);
 		wt.until(ExpectedConditions.elementToBeClickable(St.getCloseicon2()));
 		St.getCloseicon2().click();
 		Thread.sleep(10000);
 		Assert.assertEquals(title, exp);
+		*/
 	}
 
 	@Test(priority = 12)

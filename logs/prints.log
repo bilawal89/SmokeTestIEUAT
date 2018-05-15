@@ -343,3 +343,63 @@ Session ID: c544b6ce-a85a-4d2c-b246-46ec3a5e91b3
 10:02:07.050 [main] INFO  resources.base - User have reached the  Saved Report page after clicking on the Saved Report icon from the header of the page
 10:02:08.021 [main] INFO  resources.base - user is searching printer using the search textbox
 10:02:39.099 [main] INFO  resources.base - User Have Successfully reached the Compare page
+08:45:30.353 [main] INFO  resources.base - User Have Successfully Login To The Home Page
+08:45:50.055 [main] INFO  resources.base - User Have Successfully reached the favorites Page
+08:46:11.049 [main] ERROR resources.base - Favorite page not Open
+08:46:11.051 [main] ERROR resources.base - Unable to find element with xpath == (//a[@class='btn'])[2]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-B75F35K', ip: '10.0.2.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:18794/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 415fce85-712b-4087-b951-71c5a2d6d0ed
+*** Element info: {Using=xpath, value=(//a[@class='btn'])[2]}
+08:46:32.402 [main] INFO  resources.base - user is searching printer using the search textbox
+08:46:32.424 [main] INFO  resources.base - User Have Successfully reached the printer search listing page
+08:46:32.803 [main] INFO  resources.base - Search result data is Appearing on the Search Result Page
+08:46:56.256 [main] INFO  resources.base - User Have Successfully reached the PDP Page
+08:47:11.709 [main] INFO  resources.base - User has clicked the Logo from the footer of the page
+08:47:11.728 [main] INFO  resources.base - User Have reached the Home Page clicking on the footer Logo
+08:47:25.509 [main] INFO  resources.base - User has clicked on the My Profile page from My Account dropdown
+08:47:25.525 [main] INFO  resources.base - User has clicked on the My Profile page from My Account dropdown
+08:47:40.734 [main] INFO  resources.base - User has clicked on the My Profile page from My Account dropdown
+08:47:54.054 [main] INFO  resources.base - User has clicked the Logo from the header of the page
+08:47:54.079 [main] INFO  resources.base - User Have reached the Home Page clicking on the Header Logo
+08:48:00.328 [main] INFO  resources.base - User has clicked on the Standard Catalog Navigation button from header
+08:48:05.346 [main] INFO  resources.base - User Have reached the Standard Catalog Page
+08:48:28.252 [main] INFO  resources.base - User has clicked on the 1st Standard Product appearing and reached the PDP Page
+08:49:01.661 [main] INFO  resources.base - User has clicked on the All Product Nevigation button from the header
+08:49:11.676 [main] INFO  resources.base - User Have reached the All Product Page
+08:49:25.747 [main] INFO  resources.base - User has clicked on Audio Cables Category From All Products Page
+08:49:40.762 [main] INFO  resources.base - User Have reached the Audio Cables Category Page
+08:50:07.621 [main] INFO  resources.base - User has clicked on Resouces link from the header
+08:50:17.637 [main] INFO  resources.base - User Have reached the Resources Page
+08:50:33.465 [main] INFO  resources.base - User has clicked on Special Offer Link from the header
+08:50:33.500 [main] INFO  resources.base - User Have reached the Special Offer Page
+08:50:40.904 [main] INFO  resources.base - User has clicked on Cart Icon from the header
+08:50:40.934 [main] INFO  resources.base - User Have reached the Shopping Cart Page
+08:50:47.916 [main] INFO  resources.base - User has clicked on the Standard Catalog Link from the footer of the page
+08:50:57.981 [main] INFO  resources.base - User Have reached the Standard Product page after clicking on the Standard Catalog Link from the footer of the page
+08:51:12.450 [main] INFO  resources.base - User has clicked on the All product Link from the footer of the page
+08:51:12.464 [main] INFO  resources.base - User Have reached the All Product page after clicking on the Standard Catalog Link from the footer of the page
+08:51:32.557 [main] INFO  resources.base - User has clicked on the resources  Link from the footer of the page
+08:51:32.605 [main] INFO  resources.base - User Have reached the resources page after clicking on the resources Link from the footer of the page
+08:51:52.187 [main] INFO  resources.base - User has clicked on the Special offer Link from the footer of the page
+08:51:52.213 [main] INFO  resources.base - User Have reached the Special offer after clicking on the Special offer Link from the footer of the page
+08:52:08.161 [main] INFO  resources.base - User has clicked on the Special offer Link from the footer of the page
+08:52:08.184 [main] INFO  resources.base - User Have reached the Favorites after clicking on the Favorites Link from the footer of the page
+08:52:43.009 [main] INFO  resources.base - User has clicked on the Track button from the header of the page
+08:52:43.027 [main] INFO  resources.base - User have reached the Track page after clicking on the Track button from the header of the page
+08:52:59.684 [main] INFO  resources.base - User has clicked on the order button from the header of the page
+08:52:59.811 [main] INFO  resources.base - User have reached the Order page after clicking on the Order button from the header of the page
+08:53:39.935 [main] INFO  resources.base - User has clicked on the Purchase Analysis button from the header of the page
+08:53:39.948 [main] INFO  resources.base - User have reached the Purchase Analysis page after clicking on the Purchase Analysis button from the header of the page
+08:53:41.557 [main] INFO  resources.base - User have clicked on email icon on purchase analysis Page
+08:53:42.993 [main] INFO  resources.base - User have entered the email on email field at purchase analysis Page
+08:53:45.006 [main] INFO  resources.base - User have click on Send button at email popup screen at purchase analysis Page
+08:54:06.180 [main] INFO  resources.base - User has clicked on the Calendar button from the header of the page
+08:54:16.201 [main] INFO  resources.base - User have reached the  Calendar page after clicking on the Calendar button from the header of the page
+08:54:25.723 [main] INFO  resources.base - User has clicked on the Saved Report icon from the header of the page
+08:54:40.789 [main] INFO  resources.base - User have reached the  Saved Report page after clicking on the Saved Report icon from the header of the page
+08:54:41.608 [main] INFO  resources.base - user is searching printer using the search textbox
+08:55:27.032 [main] INFO  resources.base - User Have Successfully reached the Compare page
