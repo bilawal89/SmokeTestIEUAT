@@ -30,6 +30,7 @@ import pageObjects.Footer;
 import pageObjects.Header;
 import pageObjects.HomePage;
 import pageObjects.MyProfilePage;
+import pageObjects.PDP;
 import pageObjects.PurchaseAnalysis;
 import pageObjects.SearchResultPage;
 import pageObjects.StandardsCatalog;
@@ -327,10 +328,10 @@ Srp.getProduct4Cart().click();
 	
 	@Test(priority = 5)
 
-	public void ValidatePDP() throws InterruptedException {
+	public void ValidatePDPandAddToCart() throws InterruptedException {
 		Thread.sleep(5000);
 		Srp = new SearchResultPage(driver);
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, 60);
 		// --wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@id='add_to_cart_10886231']"))));
 		wait.until(ExpectedConditions.visibilityOf(Srp.getProduct1Name()));
 
@@ -350,7 +351,11 @@ Srp.getProduct4Cart().click();
 			Log.error(e.getMessage());
 		}
 		Assert.assertEquals(title5, expected1);
-
+		PDP pp = new PDP(driver);
+		wait.until(ExpectedConditions.visibilityOf(pp.getCartbtn()));
+		pp.getCartbtn().click();
+		wait.until(ExpectedConditions.visibilityOf(pp.getCartClose()));
+		pp.getCartClose().click();
 	}
 
 	@Test(priority = 6)
@@ -374,10 +379,11 @@ Srp.getProduct4Cart().click();
 
 	@Test(priority = 7)
 
-	public void ValidateFooterLogo() {
+	public void ValidateFooterLogo() throws InterruptedException {
 		Footer ft = new Footer(driver);
 		// hd.getHeadLogo().click();
 		ft.getFootLogo().click();
+		Thread.sleep(10000);
 		Log.info("User has clicked the Logo from the footer of the page");
 		String title5 = driver.getTitle();
 		try {
@@ -500,16 +506,18 @@ Srp.getProduct4Cart().click();
 			Log.error("No standard Product found to click");
 			Log.error(e.getMessage());
 		}
+		
+		/*15-5-2018
 
-		/*15-may-2018-
-		 * wt.until(ExpectedConditions.elementToBeClickable(St.getCartBtnNew()));
+		wt.until(ExpectedConditions.elementToBeClickable(St.getCartBtnNew()));
 		St.getCartBtnNew().click();
 		Thread.sleep(10000);
 		wt.until(ExpectedConditions.elementToBeClickable(St.getCloseicon2()));
 		St.getCloseicon2().click();
 		Thread.sleep(10000);
 		Assert.assertEquals(title, exp);
-		*/
+		
+		15-5-2018*/
 	}
 
 	@Test(priority = 12)
@@ -541,9 +549,10 @@ Srp.getProduct4Cart().click();
 		Thread.sleep(4000);
 		AP.getAudioCablesFF().click();
 		Log.info("User has clicked on Audio Cables Category From All Products Page");
+		Thread.sleep(15000);
 		String title5 = driver.getTitle();
 		String expectedTitle = "Audio Cables - MarkITplace";
-		Thread.sleep(15000);
+		
 		try {
 			Assert.assertEquals(title5, expectedTitle);
 			Log.info("User Have reached the Audio Cables Category Page");
@@ -576,9 +585,10 @@ Srp.getProduct4Cart().click();
 	}
 
 	@Test(priority = 15)
-	public void ValidateSpecialOffer() {
+	public void ValidateSpecialOffer() throws InterruptedException {
 		Header Head = new Header(driver);
 		Head.getSpecialOffers().click();
+		Thread.sleep(10000);
 		Log.info("User has clicked on Special Offer Link from the header");
 		String title5 = driver.getTitle();
 		String expectedTitle = "Special Offers - MarkITplace";
@@ -646,7 +656,7 @@ Srp.getProduct4Cart().click();
 		}
 
 
-	@Test(priority = 18,enabled=false)
+	@Test(priority = 18)
 	public void ValidateCheckoutProcess() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, 100);
 		Random random = new Random();
@@ -741,11 +751,12 @@ Srp.getProduct4Cart().click();
 		Assert.assertEquals(title5, "Shop - MarkITplace");
 	}
 
-	@Test(priority = 21)
+	@Test(priority = 21,enabled=false)
 
 	public void ValidateFooterLinks() throws InterruptedException {
 		Footer ft = new Footer(driver);
 		ft.getFStandCatalogFF().click();
+		Thread.sleep(10000);
 		Log.info("User has clicked on the Standard Catalog Link from the footer of the page");
 		Thread.sleep(10000);
 		String title1 = driver.getTitle();
@@ -764,7 +775,7 @@ Srp.getProduct4Cart().click();
 		Assert.assertEquals(title1, exp1);
 
 		ft.getFAllPrdctFF().click();
-		Thread.sleep(5000);
+		Thread.sleep(15000);
 		Log.info("User has clicked on the All product Link from the footer of the page");
 		String title2 = driver.getTitle();
 		String exp2 = "All Products - MarkITplace";
@@ -782,7 +793,7 @@ Srp.getProduct4Cart().click();
 		Assert.assertEquals(title2, exp2);
 
 		ft.getFResourcesFF().click();
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		Log.info("User has clicked on the resources  Link from the footer of the page");
 		String title3 = driver.getTitle();
 		String exp3 = "Resources - MarkITplace";
@@ -800,7 +811,7 @@ Srp.getProduct4Cart().click();
 		Assert.assertEquals(title3, exp3);
 
 		ft.getFSpecialOffersFF().click();
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		Log.info("User has clicked on the Special offer Link from the footer of the page");
 		String title4 = driver.getTitle();
 		String exp4 = "Special Offers - MarkITplace";
@@ -818,7 +829,7 @@ Srp.getProduct4Cart().click();
 		Assert.assertEquals(title4, exp4);
 
 		ft.getFFavoritesFF().click();
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		Log.info("User has clicked on the Special offer Link from the footer of the page");
 		String title5 = driver.getTitle();
 		String exp5 = "Favorites - MarkITplace";
@@ -864,7 +875,7 @@ Srp.getProduct4Cart().click();
 	public void ValidateordersPage() throws InterruptedException {
 		Header head = new Header(driver);
 		head.getOrderBtn().click();
-		Thread.sleep(5000);
+		Thread.sleep(15000);
 		Log.info("User has clicked on the order button from the header of the page");
 		String title5 = driver.getTitle();
 		String exp5 = "Orders - MarkITplace";
@@ -889,7 +900,7 @@ Srp.getProduct4Cart().click();
 		// WebDriverWait wait = new WebDriverWait(driver,10000);
 		// wait.until(ExpectedConditions.visibilityOf(head.getPAnalysisBtn()));
 		head.getPAnalysisBtn().click();
-		Thread.sleep(10000);
+		Thread.sleep(15000);
 		Log.info("User has clicked on the Purchase Analysis button from the header of the page");
 		String title5 = driver.getTitle();
 		String exp5 = "Purchase Analysis - MarkITplace";
@@ -911,7 +922,7 @@ Srp.getProduct4Cart().click();
 
 	public void ValidatePAEmail() throws InterruptedException {
 		PurchaseAnalysis PA = new PurchaseAnalysis(driver);
-		WebDriverWait wait = new WebDriverWait(driver, 1000000);
+		WebDriverWait wait = new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.visibilityOf(PA.getEmail()));
 		PA.getEmail().click();
 		Log.info("User have clicked on email icon on purchase analysis Page");
@@ -970,6 +981,7 @@ Srp.getProduct4Cart().click();
 			Log.error(e.getMessage());
 		}
 		Assert.assertEquals(title5, exp5);
+		Thread.sleep(7000);
 	}
 
 	@Test(priority = 27,enabled=false)
@@ -1346,7 +1358,7 @@ Srp.getProduct4Cart().click();
 		TrackPage TP = new TrackPage(driver);
 		TP.getSavedReports().click();
 		Log.info("User has clicked on the Saved Report icon from the header of the page");
-		Thread.sleep(15000);
+		Thread.sleep(20000);
 		String title5 = driver.getTitle();
 		String exp5 = "Saved Reports - MarkITplace";
 		try {
@@ -1361,7 +1373,7 @@ Srp.getProduct4Cart().click();
 		Assert.assertEquals(title5, exp5);
 	}
 	
-	@Test(priority=30)
+	@Test(priority=30,enabled=false)
 	public void ValidateComparePage() throws InterruptedException
 	{
 		WebDriverWait wt = new WebDriverWait(driver,20);

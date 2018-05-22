@@ -87,3 +87,13 @@
 09:37:29.093 [main] INFO  resources.base - User have reached the  Saved Report page after clicking on the Saved Report icon from the header of the page
 09:37:29.452 [main] INFO  resources.base - user is searching printer using the search textbox
 09:38:16.093 [main] INFO  resources.base - User Have Successfully reached the Compare page
+09:41:52.389 [main] INFO  resources.base - User Have Successfully Login To The Home Page
+09:42:05.250 [main] INFO  resources.base - User Have Successfully reached the favorites Page
+09:42:15.288 [main] ERROR resources.base - Favorite page not Open
+09:42:15.291 [main] ERROR resources.base - Currently focused window has been closed.
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-B75F35K', ip: '10.0.2.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:29150/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: ba685f4d-1be1-4cd2-abbe-df90147c0c59
+*** Element info: {Using=xpath, value=(//span[@class='control__indicator'])[2]}
